@@ -1,0 +1,31 @@
+{
+  "name": "angular-pizza-creator-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "cypress": "./bin/cypress",
+    "tslint": ".bin/tslint"
+  },
+  "scripts": {
+    "check:cy": "tsc --noEmit --pretty --project cypress",
+    "lint": "tslint --project ./tsconfig.json",
+    "list": "echo cypress:headless, cypress:browser, cypress:browser:stayOpen, cypress:headless:update-snapshots, cypress:open, DEBUG=cypress:* npm run cypress:open",
+    "cypress:headless": "cypress run --browser electron",
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
+    "@cypress/webpack-preprocessor": "^4.1.0",
+    "@medv/finder": "^1.1.1",
+    "cypress": "^3.3.1",
+    "request": "^2.88.0",
+    "ts-loader": "^6.2.0",
+    "tslint": "^5.15.0",
+    "tslint-no-unused-expression-chai": "^0.1.4",
+    "typescript": "^3.4.2",
+    "webpack": "^4.41.2"
+  }
+}

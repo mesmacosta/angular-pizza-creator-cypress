@@ -1,0 +1,7 @@
+cypress/videos/
+node_modules/
+screenshots/
+__diff_output__/
+.idea/
+*.DS_Store
+*default.profraw

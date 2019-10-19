@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-no-unused-expression-chai"
+  ],
+  "rules": {
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
+  }
+}
