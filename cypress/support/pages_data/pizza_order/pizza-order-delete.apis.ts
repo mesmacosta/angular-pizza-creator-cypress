@@ -1,8 +1,8 @@
 const apis = [{
     method: 'DELETE',
-    name: 'deleteTagOfEntry',
-    regex: '**',
-    response: 'entry/delete_tag/delete_tag_response',
+    name: 'delete_pizza_order',
+    regex: '**/api/pizzas/order',
+    response: 'pizza_order/delete_pizza_order',
 }]
 
 export { apis }

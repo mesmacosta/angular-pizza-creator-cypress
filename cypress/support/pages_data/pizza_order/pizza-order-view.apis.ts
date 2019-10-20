@@ -1,8 +1,8 @@
 const apis = [{
     method: 'GET',
-    name: 'entries',
-    regex: '**',
-    response: 'entry/bigquery/entry_details_response',
+    name: 'get_pizza_order',
+    regex: '**/api/pizzas/order',
+    response: 'pizza_order/get_pizza_order',
 }]
 
 export { apis }

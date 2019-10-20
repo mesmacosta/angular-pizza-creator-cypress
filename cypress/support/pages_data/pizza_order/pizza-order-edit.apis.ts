@@ -1,14 +1,8 @@
 const apis = [{
-    method: 'GET',
-    name: 'editEntry',
-    regex: '**',
-    response: 'entry/edit_tag/edit_tag_entry_response',
-},
-{
-    method: 'POST',
-    name: 'editSearch',
-    regex: '**',
-    response: 'entry/edit_tag/edit_tag_search_response',
+    method: 'PUT',
+    name: 'edit_pizza_order',
+    regex: '**/api/pizzas/order',
+    response: 'pizza_order/edit_pizza_order',
 }]
 
 export { apis }
