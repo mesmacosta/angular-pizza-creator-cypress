@@ -1,0 +1,21 @@
+@startuml
+
+
+IPageData <|-- PizzaOrder
+IPageData "0..*" - "0..*" StubbedAPI
+
+interface IPageData {
+  -String name
+  -String url
+  -StubbedAPI apis 
+}
+
+class StubbedAPI {
+  -String method
+  -String name
+  -String regex
+  -String response
+}
+
+@enduml
+

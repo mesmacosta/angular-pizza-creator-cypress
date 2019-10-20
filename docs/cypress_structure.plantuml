@@ -1,0 +1,46 @@
+@startuml
+
+package "Cypress" {
+
+interface cy
+
+note right of cy
+Cypress global object,
+interacts with the browser
+end note
+
+package "Integration" {
+  [pizza-order.spec]
+}
+
+package "Plugins" {
+  [typescript]
+}
+
+package "Support" {
+  folder "functions" {
+	[pizza-order.functions]
+	[commons.functions]
+  }
+  
+  folder "pages_data" {
+	[pizza-order.pd]
+  }
+    [global commands]
+}
+package "Fixtures" {
+  [pizza-order-response.json]
+}
+
+}
+
+
+
+[pizza-order.spec] --> [pizza-order.functions]
+[pizza-order.spec] --> [commons.functions]
+[pizza-order.spec] --> [pizza-order.pd]
+[pizza-order.functions] --> [pizza-order-response.json]
+[pizza-order.spec] --> cy
+[global commands] -- cy
+
+@enduml
